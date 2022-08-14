@@ -28,10 +28,13 @@ Syntax highlighted code block
 
 For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
 
-### Jekyll Themes
+### Links
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Foosterlee/test/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+- Flexbox - belangrijk voor website opbouw:
+  https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+- Svelte - Framework voor interacties en dynamische websites
+  https://svelte.dev/tutorial/basics
+- JSON server - handig als tijdelijke backend i.c.m. Svelte of React
+  https://github.com/typicode/json-server
+- React - Framework dat veel gebruikt wordt bij grote bedrijven
+  https://reactjs.org/docs/getting-started.html
