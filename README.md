@@ -26,13 +26,40 @@ For more details see [Basic writing and formatting syntax](https://docs.github.c
 ### Links
 
 - Flexbox - belangrijk voor website opbouw:
+
   https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
   Met name punt 1,2,3 en 5 zijn interessant
 - Flexbox - Voorbeeld webshop met jassen
+
   https://css-tricks.com/designing-a-product-page-layout-with-flexbox/
 - Svelte - Framework voor interacties en dynamische websites
+
   https://svelte.dev/tutorial/basics
 - JSON server - handig als tijdelijke backend i.c.m. Svelte of React
+
   https://github.com/typicode/json-server
 - React - Framework dat veel gebruikt wordt bij grote bedrijven
+
   https://reactjs.org/docs/getting-started.html
+
+### Cursussen
+
+- Git - Versie beheer
+
+    https://www.udacity.com/course/version-control-with-git--ud123
+- HTML & CSS
+
+    https://www.udacity.com/course/intro-to-html-and-css--ud001
+- Javascript - introductie
+
+    https://www.udacity.com/course/intro-to-javascript--ud803
+- Javascript - Testen
+
+    https://www.udacity.com/course/javascript-testing--ud549
+- Readme's - documentatie
+
+    https://www.udacity.com/course/writing-readmes--ud777
+- Interview voorbereiding - Frontend
+
+    https://www.udacity.com/course/front-end-interview-prep--ud250
