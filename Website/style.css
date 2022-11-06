@@ -1,0 +1,190 @@
+
+body{
+    margin: 0;
+    color: slategray; 
+    background-color: rgb(229, 255, 255);
+    font-family: 'Dosis', sans-serif;
+}
+
+.header{
+    font-size: 20px;
+    color: whitesmoke;
+    padding: 20px;
+    grid-area: h;
+    background-image: url(/Website/Fotos/griekenland-vakantie-aanbieders.jpeg);
+    background-position:80%;
+    width: 100%;
+    height: 100px;
+}
+
+.nav{
+    grid-area: n;
+}
+
+.menu{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    list-style-type: none;
+    padding: 10px;
+    background-color: rgb(21, 0, 126); 
+}
+
+.menu > li {
+    flex: 50%;
+}
+
+li a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    color:aliceblue;}
+
+.div1 {
+    margin: 25px;
+    padding: 5px;
+    text-align: center;
+    grid-area: d1;
+}
+
+.foto{
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    grid-area: i;
+}
+
+.div2 {
+    margin: 25px;
+    padding: 5px;
+    text-align: center;
+    grid-area: d2;
+}
+
+.footer{
+    color: white;
+    background-color: rgb(21, 0, 126);
+    padding: 10px;
+    font-size: 13px;
+    grid-area: f;
+}
+
+.container_home  {
+   display: grid;
+   height: 100%;
+   grid-template-columns: 1fr;
+   grid-template-rows: 100px 40px auto auto auto 40px;
+   grid-template-areas: 
+   "h"
+   "n"
+   "d1"
+   "i"
+   "d2"
+   "f";
+}
+  
+
+/* Bestemmingen*/
+h3{
+    text-decoration: underline;
+   padding-top: 20px;
+}
+
+.bestemmingen{
+    margin: 20px;
+    width: 27em;
+}
+
+.bestemming{
+    height: 180px;
+    width: 49%;
+}
+
+iframe{
+    padding: 10px;
+    margin-top: 15px;
+    width: 400px;
+    height: 310px;
+
+}
+
+/* Recepten*/
+
+/* Pagina Griekse taal*/
+b{
+    color: rgb(4, 4, 154);
+    font-size:large;
+}
+
+.taal{
+    margin: 20px;
+    width: 25em;
+}
+
+/* contact pagina */
+.form{
+   margin: 20px;
+   padding-bottom: 10px;
+   width: 20em;
+} 
+
+/* media querie */
+@media screen and (min-width: 768px){
+
+
+   .bestemmingen{
+    margin-right: auto;
+    margin-left: auto;
+    width: 40em ;
+   }
+
+   .bestemming{
+    width: 49%;
+    height: 200px;
+   }
+
+   iframe{
+    width:100%;
+    height: 300px;
+   }
+
+    .taal{
+        margin-right: auto;
+        margin-left: auto;
+        width: 30em ;
+    }
+
+    .form{
+        margin-right: auto;
+        margin-left: auto;
+        width: 20em;
+    }
+
+}
+
+
+@media screen and (min-width: 1024px){
+
+    .taal{
+        margin-right: auto;
+        margin-left: auto;
+        width: 50em ;
+    }
+
+    .form{
+        margin-right: auto;
+        margin-left: auto;
+        width: 40em;
+        border: double 3px rgb(21, 0, 126);
+        padding: 3em;
+        text-align: center;
+    }
+
+}
+
