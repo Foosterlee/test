@@ -10,46 +10,44 @@ body{
     font-size: 20px;
     color: whitesmoke;
     padding: 20px;
-    grid-area: h;
+    grid-area: header;
     background-image: url(/Website/Fotos/griekenland-vakantie-aanbieders.jpeg);
     background-position:80%;
     width: 100%;
-    height: 100px;
+    height: 150px;
 }
 
 .nav{
-    grid-area: n;
+    grid-area: nav;
+    background-color: rgb(21, 0, 126);
 }
 
 .menu{
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
-    justify-content: space-around;
+    align-items: center;
     width: 100%;
     list-style-type: none;
-    padding: 10px;
-    background-color: rgb(21, 0, 126); 
-}
-
-.menu > li {
-    flex: 50%;
 }
 
 li a {
     color: white;
-    padding: 14px 16px;
+    padding: 10px;
     text-decoration: none;
 }
 
 li a:hover {
     color:aliceblue;}
 
+.content{
+    grid-area: content;
+}
+
 .div1 {
-    margin: 25px;
     padding: 5px;
     text-align: center;
-    grid-area: d1;
+    grid-area: div1;
 }
 
 .foto{
@@ -57,14 +55,13 @@ li a:hover {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    grid-area: i;
+    grid-area: foto;
 }
 
 .div2 {
-    margin: 25px;
     padding: 5px;
     text-align: center;
-    grid-area: d2;
+    grid-area: div2;
 }
 
 .footer{
@@ -72,21 +69,7 @@ li a:hover {
     background-color: rgb(21, 0, 126);
     padding: 10px;
     font-size: 13px;
-    grid-area: f;
-}
-
-.container_home  {
-   display: grid;
-   height: 100%;
-   grid-template-columns: 1fr;
-   grid-template-rows: 100px 40px auto auto auto 40px;
-   grid-template-areas: 
-   "h"
-   "n"
-   "d1"
-   "i"
-   "d2"
-   "f";
+    grid-area: footer;
 }
   
 
@@ -115,6 +98,17 @@ iframe{
 }
 
 /* Recepten*/
+.recepten{
+    margin: 20px;
+}
+
+.recept{
+display: flex;
+justify-content: space-evenly;
+flex-wrap: wrap;
+list-style-type: none;
+gap: 15px;
+}
 
 /* Pagina Griekse taal*/
 b{
@@ -134,9 +128,36 @@ b{
    width: 20em;
 } 
 
+.container  {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 150px 40px 1fr 40px;
+    grid-template-areas: 
+    "header"
+    "nav"
+    "content"
+    "footer";
+ }
+
 /* media querie */
 @media screen and (min-width: 768px){
 
+    .content_home{
+        display: grid;
+        height: 100%;
+        grid-template-columns: 150px 2fr 1fr;
+        grid-template-rows: 500px ;
+        grid-template-areas: 
+        "div1 foto div2";
+        margin: 20px;
+    }
+
+    .foto{
+        place-self: center;
+        width: 400px;
+        height: auto;
+    }
 
    .bestemmingen{
     margin-right: auto;
@@ -168,9 +189,31 @@ b{
 
 }
 
-
 @media screen and (min-width: 1024px){
 
+    .content_home{
+        display: grid;
+        height: 100%;
+        grid-template-columns: 250px 2fr 1fr;
+        grid-template-rows: 500px ;
+        grid-template-areas: 
+        "div1 foto div2";
+        margin: 20px;
+    }
+
+    .div1{
+        font-size: 22px;
+    }
+
+    .foto{
+        place-self: center;
+        width: 600px;
+        height: auto;
+    }
+    .div2{
+        place-self: end;
+        font-size: 17px;
+    }
     .taal{
         margin-right: auto;
         margin-left: auto;
@@ -187,4 +230,5 @@ b{
     }
 
 }
+
 
