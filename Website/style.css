@@ -30,7 +30,7 @@ body{
 .toggle{
     position:absolute;
     cursor: pointer;
-    margin:-0.6rem 1rem;
+    margin:0rem 1rem;
     right:0;
 }
 
@@ -44,7 +44,7 @@ svg{
 }
 
 .nav_menu{
-    margin-top: 0.2rem;
+    margin-top: 0.3rem;
 }
 
 .checkbox{
@@ -55,9 +55,9 @@ svg{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1.5rem;
-    margin: 1rem;
-    padding-bottom: 5px;
+    gap: 1rem;
+    margin: 1.5rem;
+    padding-bottom: 15px;
     background-color: rgb(21, 0, 126);
 }
 
@@ -80,7 +80,7 @@ li a {
     display:block ;
 }
 
-#checkbox:checked ~ label.toggle .menu{
+#checkbox:checked ~ label.toggle .nav_menu{
     display: none;
 }
 
@@ -191,12 +191,17 @@ b{
 
 /* media querie */
 @media screen and (min-width: 768px){
+    .header{
+        font-size: 20px;
+    }
     .toggle{
         display: none;
     }
 
     .menu{
         flex-direction: row;
+        padding-bottom: 0;
+        margin-top: 0.5rem;
     }
     
     .menu > li {
@@ -301,5 +306,6 @@ b{
     }
 
 }
+
 
 
