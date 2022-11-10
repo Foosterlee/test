@@ -1,3 +1,7 @@
+* {
+    margin: 0;
+    padding: 0;
+}
 
 body{
     margin: 0;
@@ -7,49 +11,87 @@ body{
 }
 
 .header{
-    font-size: 20px;
+    font-size: 15px;
     color: whitesmoke;
     padding: 20px;
     grid-area: header;
     background-image: url(/Website/Fotos/griekenland-vakantie-aanbieders.jpeg);
     background-position:80%;
-    width: 100%;
-    height: 150px;
+    width: 96,5%;
+    height: 100px;
 }
 
 .nav{
-    grid-area: nav;
+    border-bottom: 1px solid white;
     background-color: rgb(21, 0, 126);
+}
+
+.toggle{
+    position:absolute;
+    cursor: pointer;
+    margin:0rem 1rem;
+    right:0;
+}
+
+svg{
+    width: 1.5rem;
+    fill: white ;
+}
+
+.close {
+    display: none;
+}
+
+.menu{
+    margin-top: 0.2rem;
+}
+
+.checkbox{
+    display: none;
 }
 
 .menu{
     display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
+    flex-direction: column;
     align-items: center;
-    width: 100%;
-    list-style-type: none;
+    gap: 2rem;
+    margin: 1rem;
+    background-color: rgb(21, 0, 126);
+  
 }
 
-.menu > li{
-    width: 50%;
+li{
+    list-style: none;
+    display: none;
 }
 
 li a {
-    color: white;
-    padding: 10px;
     text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
 }
 
-li a:hover {
-    color:aliceblue;}
+#checkbox:checked ~ ul.menu li{
+    display: block;
+}
+
+#checkbox:checked ~ label.toggle .close{
+    display:block ;
+}
+
+#checkbox:checked ~ label.toggle .menu{
+    display: none;
+}
+
+nav a:hover {
+    color:rgb(176, 215, 248);}
 
 .content{
     grid-area: content;
 }
 
 .div1 {
-    padding: 5px;
+    padding: 10px;
     text-align: center;
     grid-area: div1;
 }
@@ -57,13 +99,15 @@ li a:hover {
 .foto{
     border-radius: 50%;
     display: block;
+    width: 100%;
+    height: auto;
     margin-left: auto;
     margin-right: auto;
     grid-area: foto;
 }
 
 .div2 {
-    padding: 5px;
+    padding: 10px;
     text-align: center;
     grid-area: div2;
 }
@@ -135,8 +179,8 @@ b{
 .container  {
     display: grid;
     height: 100%;
-    grid-template-columns: 1fr;
-    grid-template-rows: 150px 40px 1fr 40px;
+    grid-template-columns: 100%;
+    grid-template-rows: 100px 40px 1fr 40px;
     grid-template-areas: 
     "header"
     "nav"
@@ -146,6 +190,17 @@ b{
 
 /* media querie */
 @media screen and (min-width: 768px){
+    .toggle{
+        display: none;
+    }
+
+    .menu{
+        flex-direction: row;
+    }
+    
+    .menu > li {
+        display: block;
+    }
 
     .content_home{
         display: grid;
@@ -194,11 +249,22 @@ b{
 }
 
 @media screen and (min-width: 1024px){
+    .toggle{
+        display: none;
+    }
+
+    .menu{
+        flex-direction: row;
+    }
+    
+    .menu > li {
+        display: block;
+    }
 
     .content_home{
         display: grid;
         height: 100%;
-        grid-template-columns: 250px 2fr 1fr;
+        grid-template-columns: 250px 2fr 300px;
         grid-template-rows: 500px ;
         grid-template-areas: 
         "div1 foto div2";
@@ -234,5 +300,4 @@ b{
     }
 
 }
-
 
