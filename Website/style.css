@@ -167,7 +167,11 @@ b{
 
 .taal{
     margin: 10px;
-    width:100%;
+    width: 1fr;
+}
+
+.taal p {
+    padding:1rem 0;
 }
 
 /* contact pagina */
